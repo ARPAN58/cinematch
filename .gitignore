@@ -35,6 +35,8 @@ ENV/
 .env
 
 # Data files
+!movies_list.pkl
+!similarity.pkl
 *.pkl
 *.csv
 
