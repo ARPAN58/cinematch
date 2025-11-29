@@ -35,10 +35,10 @@ ENV/
 .env
 
 # Data files
-!movies_list.pkl
-!similarity.pkl
-*.pkl
-*.csv
+# !movies_list.pkl
+# !similarity.pkl
+# *.pkl
+
 
 # Logs
 logs/

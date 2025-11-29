@@ -6,8 +6,8 @@ import ast
 import pickle
 
 # 1. Load Data
-movies = pd.read_csv(r'C:\Users\VICTUS\OneDrive\Documents\archive\tmdb_5000_credits.csv')
-credits = pd.read_csv(r'C:\Users\VICTUS\OneDrive\Documents\archive\tmdb_5000_movies.csv')
+movies = pd.read_csv(r'./data/tmdb_5000_movies.csv')
+credits = pd.read_csv(r'./data/tmdb_5000_credits.csv')
 
 # 2. Merge Dataframes on title
 movies = movies.merge(credits, on='title')
