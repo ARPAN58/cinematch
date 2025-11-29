@@ -35,9 +35,10 @@ ENV/
 .env
 
 # Data files
-# !movies_list.pkl
-# !similarity.pkl
-# *.pkl
+*.pkl
+!generate_similarity.py
+!app.py
+!requirements.txt
 
 
 # Logs
