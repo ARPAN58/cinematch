@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import joblib
 import requests
 from streamlit_option_menu import option_menu
 import base64
@@ -138,8 +139,8 @@ def get_recommendations(movie_title, num_recommendations=5):
 def load_data():
     with open('movies_list.pkl', 'rb') as f:
         movies_dict = pickle.load(f)
-    with open('similarity.pkl', 'rb') as f:
-        similarity = pickle.load(f)
+    # Load the compressed similarity data
+    similarity = joblib.load('similarity.joblib')
     return pd.DataFrame(movies_dict), similarity
 
 movies, similarity = load_data()
