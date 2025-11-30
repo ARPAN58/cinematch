@@ -1,9 +1,12 @@
+import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import ast
 import pickle
+
+st.write("Loading...")
 
 # 1. Load Data
 movies = pd.read_csv(r'./data/tmdb_5000_movies.csv')
